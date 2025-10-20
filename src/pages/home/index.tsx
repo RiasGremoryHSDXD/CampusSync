@@ -3,8 +3,8 @@ import NavigationBar from "../../components/navigationBar/index"
 export default function index() {
   return (
     <div>
-      <p>Log In</p>
-      <NavigationBar></NavigationBar>
+      <p className="text-yello-500">Home</p>
+      <NavigationBar/>
     </div>
   )
 }

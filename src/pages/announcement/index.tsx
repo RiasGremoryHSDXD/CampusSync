@@ -1,10 +1,11 @@
 import NavigationBar from "../../components/navigationBar/index"
 
+
 export default function index() {
   return (
     <div>
-      <p>Log In</p>
-      <NavigationBar></NavigationBar>
+      <p className="text-orange-500">Announcment</p>
+      <NavigationBar />
     </div>
   )
 }
