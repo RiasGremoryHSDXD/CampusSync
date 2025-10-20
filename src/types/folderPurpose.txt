@@ -1,0 +1,10 @@
+Purpose:
+This folder defines TypeScript interfaces, types, and data models used across the project.
+
+Examples:
+- User.ts for user data structure
+- Product.ts for product model
+- index.d.ts for shared global types
+
+Why:
+Centralizing types improves consistency, reduces duplication, and ensures reliable type-checking across the codebase.

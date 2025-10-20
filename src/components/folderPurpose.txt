@@ -1,0 +1,10 @@
+Purpose:
+This folder contains reusable UI components — the building blocks of the interface.
+
+Examples:
+- Common components like Button, Input, or Modal
+- Layout components like Navbar, Sidebar, or Footer
+- Feature-specific components grouped by feature folders
+
+Why:
+Components define how the app looks and behaves visually. Keeping them isolated improves reusability and maintainability.

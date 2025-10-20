@@ -1,0 +1,10 @@
+Purpose:
+This folder represents the app’s main screens or routes (e.g., Home, Login, Dashboard).
+
+Examples:
+- Home.tsx for the landing page
+- Login.tsx for user authentication
+- Dashboard/Index.tsx for user-specific data
+
+Why:
+Each file in /pages corresponds to a navigable route. This separation keeps navigation logic and page-level composition clear.

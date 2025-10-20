@@ -1,0 +1,10 @@
+Purpose:
+This folder manages global app state using React Context API.
+
+Examples:
+- AuthContext.tsx for authentication state
+- ThemeContext.tsx for dark/light mode
+- AppContext.tsx for shared UI settings
+
+Why:
+Context provides a clean way to share state and functions across multiple components without excessive prop drilling.

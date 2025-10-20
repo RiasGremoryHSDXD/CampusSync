@@ -1,0 +1,10 @@
+Purpose:
+This folder contains utility and helper functions that handle logic, data manipulation, or formatting — without any UI.
+
+Examples:
+- formatDate.ts for date formatting
+- calculateTotal.ts for computations
+- validators.ts for input validation
+
+Why:
+Keeping logic separate from presentation improves testability and code reuse across multiple components and hooks.

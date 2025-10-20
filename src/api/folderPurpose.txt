@@ -1,0 +1,10 @@
+Purpose:
+This folder contains all API-related logic such as HTTP requests, data fetching, and backend communication.
+
+Examples:
+- apiClient.js or apiClient.ts for base Axios or Fetch configuration
+- userApi.ts for user-related endpoints
+- productApi.ts for product-related requests
+
+Why:
+Centralizing API logic ensures all network requests use consistent headers, error handling, and authentication.
