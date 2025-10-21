@@ -3,9 +3,9 @@ import type { TextFieldProps } from "../types/stringTextFiled"
 
 export default function StringTextField({
   inputContainerDesign = "flex flex-col gap-1",
-  inputDesign = "border border-gray-400 rounded-[6px] px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-400",
+  inputDesign = "border border-gray-400 rounded-[5px] px-3 py-1 w-full focus:outline-none focus:ring-2 focus:ring-blue-400",
   label,
-  labelDesing = "font-small text-gray-700",
+  labelDesing = "text-sm text-gray-700",
   value,
   placeholder = "",
   onChange,
