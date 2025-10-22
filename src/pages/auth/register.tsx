@@ -2,6 +2,7 @@ import { useState } from "react"
 import { useScreenSize } from "../../hooks/useScreenSize"
 import StringTextField from "../../components/stringTextField"
 import Button from "../../components/button"
+import { setLoginFlag } from "../../utils/setLogInFlag"
 import "./register.css"
 
 export default function Register() {
@@ -30,6 +31,13 @@ export default function Register() {
     e.preventDefault()
     setFormSubmitted(true)
 
+    if(firstName.trim() === "" || 
+        lastName.trim() === "" || 
+        course.trim() === "" || 
+        email.trim() === "" ||
+        password.trim() === ""
+      ) return
+    setLoginFlag()
 
     // 🔹 If all fields are filled, log the data
     console.log("✅ Form submitted successfully:")

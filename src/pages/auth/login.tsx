@@ -1,6 +1,7 @@
 import { useState } from "react"
 import StringTextField from "../../components/stringTextField"
 import Button from "../../components/button"
+import { setLoginFlag } from "../../utils/setLogInFlag"
 
 export default function login() {
 
@@ -14,7 +15,8 @@ export default function login() {
         e.preventDefault()
         setFormSubmitted(true)
 
-
+        if(email.trim() === "" || password.trim() === "") return
+        setLoginFlag()
     }
 
   return (
