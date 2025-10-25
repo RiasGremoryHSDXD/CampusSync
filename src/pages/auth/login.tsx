@@ -2,11 +2,13 @@ import { useState } from "react"
 import StringTextField from "../../components/stringTextField"
 import Button from "../../components/button"
 import { setLoginFlag } from "../../utils/setLogInFlag"
+import { useNavigate } from "react-router-dom"
 
 export default function login() {
 
     const [email, setEmail] = useState<string>("")
     const [password, setPassword] = useState<string>("")
+    const navigation = useNavigate()
 
     // 🔹 Track if form has been submitted
     const [formSubmitted, setFormSubmitted] = useState<boolean>(false)
@@ -17,6 +19,8 @@ export default function login() {
 
         if(email.trim() === "" || password.trim() === "") return
         setLoginFlag()
+
+        navigation("/home")
     }
 
   return (

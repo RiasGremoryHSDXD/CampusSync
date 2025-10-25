@@ -4,6 +4,8 @@ import StringTextField from "../../components/stringTextField"
 import Button from "../../components/button"
 import { setLoginFlag } from "../../utils/setLogInFlag"
 import "./register.css"
+import { useNavigate } from "react-router-dom"
+
 
 export default function Register() {
   const [firstName, setFirstName] = useState<string>("")
@@ -11,6 +13,8 @@ export default function Register() {
   const [course, setCourse] = useState<string>("")
   const [email, setEmail] = useState<string>("")
   const [password, setPassword] = useState<string>("")
+  const navigation = useNavigate()
+
 
   // 🔹 Track if form has been submitted
   const [formSubmitted, setFormSubmitted] = useState<boolean>(false)
@@ -48,6 +52,8 @@ export default function Register() {
       email,
       password
     })
+
+    navigation("/home")
   }
 
   return (
