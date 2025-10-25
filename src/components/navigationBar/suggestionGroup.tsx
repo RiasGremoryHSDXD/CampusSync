@@ -19,6 +19,7 @@ export default function suggestionGroup() {
             buttonText="Suggest Group"
             onClick={() => setClickSuggestionGroup(true)}
         />
+        {clickSuggestionGroup && ("")}
     </form>
   )
 }
