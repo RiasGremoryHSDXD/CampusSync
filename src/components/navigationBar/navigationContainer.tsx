@@ -11,7 +11,7 @@ import ProfileClickModal from "./profileClickModal"
 export default function navigationContainer() {
     
     const [searchBarValue, setSearchBarValue] = useState<string>("")
-    const [clickSuggestionGroup, setClickSuggestionGroup] = useState<boolean>(false)
+    // const [clickSuggestionGroup, setClickSuggestionGroup] = useState<boolean>(false)
     const [clickNotification, setClickNotification] = useState<boolean>(false)
     const [clickProfile, setClickProfile] = useState<boolean>(false)
 
