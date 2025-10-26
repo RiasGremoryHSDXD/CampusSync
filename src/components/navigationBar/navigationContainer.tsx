@@ -7,6 +7,7 @@ import SuggestionGroup from "./suggestionGroup/suggestionGroup"
 import LogoHoverMessage from "./logoHoverMessage"
 import NotificationClickModal from "./notificationClickModal"
 import ProfileClickModal from "./profileClickModal"
+import { Search } from "lucide-react"
 
 export default function navigationContainer() {
     
@@ -35,16 +36,25 @@ export default function navigationContainer() {
             <WebsiteLogo />
         </div>
         <div
-            className="w-[80vw] flex justify-between items-center"
+            className="w-[80vw] flex sm:justify-between justify-end gap-x-2 items-center"
         >
             <div
-                className="flex gap-x-3 items-center"
+                className="flex gap-x-3 items-center "
             >
-                <SearchBar 
+                {/* Small screen: only show Search icon */}
+                <div className="block [@media(min-width:500px)]:hidden">
+                    <Search />
+                </div>
+
+
+                {/* Medium and larger screens: show SearchBar */}
+                <div className="hidden [@media(min-width:500px)]:block">
+                    <SearchBar
                     value={searchBarValue}
                     onChange={(e) => setSearchBarValue(e.target.value)}
                     placeholder="Search post, event, or item"
-                />
+                    />
+                </div>
 
                 <SuggestionGroup />
             </div>
