@@ -8,7 +8,7 @@ interface ProfileProps {
 
 export default function profile({
     profileDesign,
-    imageDesign = "h-[4vh] hover:brightness-50 hover:cursor-pointer transition-all duration-200",
+    imageDesign = "lg:h-[4vh] w-[30px] h-[30px] hover:brightness-50 hover:cursor-pointer transition-all duration-200",
     onClick
 } : ProfileProps) {
   return (

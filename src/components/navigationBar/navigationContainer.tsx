@@ -27,7 +27,7 @@ export default function navigationContainer() {
 
   return (
     <div
-        className="flex justify-between bg-[#F9BF3B] w-full h-18 py-2 px-10"
+        className="flex justify-between bg-[#F9BF3B] w-full h-18 py-2 lg:px-10 px-2"
     >
         <div
             className="flex"

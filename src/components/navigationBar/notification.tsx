@@ -9,7 +9,7 @@ interface NotificationProps {
 
 export default function Notification({
   notificationDesign = "relative inline-block",
-  imageDesign = "h-[4vh] hover:brightness-50 hover:cursor-pointer transition-all duration-200",
+  imageDesign = "lg:h-[4vh] w-[30px] h-[30px] hover:brightness-50 hover:cursor-pointer transition-all duration-200",
   badgeCount,
   onClick,
 }: NotificationProps) {
