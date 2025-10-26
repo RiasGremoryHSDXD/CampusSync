@@ -1,5 +1,6 @@
-import Button from "../button"
+import Button from "../../button"
 import { useState } from "react"
+import SuggestionGroupClickModal from "./suggestionGroupClickModal"
 
 export default function suggestionGroup() {
     
@@ -8,7 +9,7 @@ export default function suggestionGroup() {
     const handleClickSuggestionGroup = (e: React.FormEvent) => {
         e.preventDefault()
 
-        alert("Click Suggestion Group")
+        setClickSuggestionGroup(true)
     }
 
     return (
@@ -19,7 +20,7 @@ export default function suggestionGroup() {
             buttonText="Suggest Group"
             onClick={() => setClickSuggestionGroup(true)}
         />
-        {clickSuggestionGroup && ("")}
+        {clickSuggestionGroup && (<SuggestionGroupClickModal onClose={() => setClickSuggestionGroup(false)}/>)}
     </form>
   )
 }
