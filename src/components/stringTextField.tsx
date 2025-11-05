@@ -11,7 +11,7 @@ export default function StringTextField({
   onChange,
   type = "text",
   errorMessage = "",
-  errorMessageDesign = "text-sm text-red-500",
+  errorMessageDesign = "text-sm",
   name,
   disabled = false,
   required = false,
@@ -95,9 +95,11 @@ export default function StringTextField({
       </div>
 
       {/* Error message */}
-      {showError && (
+      {/* {showError && (
         <p className={errorMessageDesign}>{errorMessage}</p>
-      )}
+      )} */}
+      <p className={`${errorMessageDesign} ${showError ? "text-red-500" : "text-white"}` }>{errorMessage}</p>
+
     </div>
   )
 }

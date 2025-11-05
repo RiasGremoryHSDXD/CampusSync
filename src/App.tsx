@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import LandingPage from "./pages/landingPage"
 import { ProtectedRoute } from "./hooks/userIsLogIn"
-import Home from "./pages/home/index"
+import Home from "./pages/index"
 
 /**
  * PROTECTED ROUTE FUNCTIONS

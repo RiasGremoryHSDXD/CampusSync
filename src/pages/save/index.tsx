@@ -1,8 +1,6 @@
 
 export default function index() {
   return (
-    <div>
-      <p>Announcment</p>
-    </div>
+    <div>Save Section</div>
   )
 }
